@@ -4,7 +4,7 @@ version: '3.7'
 services: 
 
   agent:
-    image: portainer/agent:2.0.0
+    image: portainer/agent:2.1.0
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/var/lib/docker/volumes
@@ -16,7 +16,7 @@ services:
         constraints: [node.platform.os == linux]
 
   main:
-    image: portainer/portainer-ce:2.0.1
+    image: portainer/portainer-ce:2.1.1
     command: >
       --admin-password {{ portainer_admin_password | replace('$', '$$') }} 
       -H tcp://tasks.agent:9001 

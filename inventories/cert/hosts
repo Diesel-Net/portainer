@@ -1,0 +1,11 @@
+all:
+  children:
+
+    leader:
+      hosts:
+        # cert.occ.starbucks.net
+        ub60847.starbucks.net: 
+
+  vars:        
+    ansible_user: automation
+    ansible_python_interpreter: /usr/bin/python3

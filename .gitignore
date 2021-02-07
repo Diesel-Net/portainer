@@ -1,0 +1,4 @@
+roles/common
+roles/docker_stack
+
+.DS_Store

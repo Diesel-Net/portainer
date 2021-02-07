@@ -1,0 +1,2 @@
+unix_certs: /etc/ssl/certs/
+unix_localtime: /etc/localtime

@@ -1,0 +1,8 @@
+proxy_path: /portainer
+
+proxy_router_main: '{{ git_repository }}-main'
+proxy_router_main_strip: '{{ proxy_router_main }}-strip '
+proxy_router_main_redirect: '{{ proxy_router_main }}-redirect'
+
+proxy_domains: 
+  - "{{ env }}.diesel.net"

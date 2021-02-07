@@ -1,0 +1,2 @@
+docker_network: "diesel_net"
+docker_stack: "{{ env }}_{{ codename }}"

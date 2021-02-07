@@ -3,8 +3,7 @@ all:
 
     leader:
       hosts:
-        # dev.occ.starbucks.net
-        ub60841.starbucks.net: 
+        dev.diesel.net: 
 
   vars:        
     ansible_user: automation

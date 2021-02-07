@@ -3,8 +3,7 @@ all:
 
     leader:
       hosts:
-        # cert.occ.starbucks.net
-        ub60847.starbucks.net: 
+        test.diesel.net: 
 
   vars:        
     ansible_user: automation

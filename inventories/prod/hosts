@@ -3,24 +3,11 @@ all:
 
     leader:
       hosts:
-        # occ.starbucks.net
-        ub60848.starbucks.net:
+        diesel.net:
           
-    tool:
+    tools:
       hosts:
-        # docs.occ.starbucks.net
-        # tools.occ.starbucks.net
-        # pypi.occ.starbucks.net
-        # docker.occ.starbucks.net
-        # awx.occ.starbucks.net
-        ub52439.starbucks.net:
-
-    build:
-      hosts:
-        # build.occ.starbucks.net
-        # drone.occ.starbucks.net
-        # hooks.occ.starbucks.net
-        ub60157.starbucks.net:
+        tools.diesel.net:
 
   vars:        
     ansible_user: automation

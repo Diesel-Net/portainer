@@ -1,5 +1,0 @@
-user: automation
-home: "/home/{{ user }}"
-
-codename: portainer
-app_data: "{{ home }}/.diesel/{{ codename }}"

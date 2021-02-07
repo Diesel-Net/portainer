@@ -1,3 +1,10 @@
+user: automation
+home: "/home/{{ user }}"
+
+codename: portainer
+app_data: "{{ home }}/.diesel/{{ codename }}"
+
+
 proxy_path: /portainer
 
 proxy_router_main: '{{ git_repository }}-main'

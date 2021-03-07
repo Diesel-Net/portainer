@@ -11,7 +11,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
-    inventory: inventories/dev/hosts
+    inventory: inventories/development/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:
@@ -36,7 +36,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
-    inventory: inventories/test/hosts
+    inventory: inventories/stable/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:
@@ -61,7 +61,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
-    inventory: inventories/prod/hosts
+    inventory: inventories/production/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:

@@ -26,9 +26,6 @@ services:
       - "8000:8000"
     volumes:
       - {{ directories_data }}:/data
-    environment:
-      - PUID=1001
-      - PGID=1001 
     networks:
       - {{ docker_network }}
     deploy:

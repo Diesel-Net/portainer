@@ -9,9 +9,9 @@ all:
       hosts:
         tools.diesel.net:
 
-    game:
+    games:
       hosts:
-        game.diesel.net:
+        games.diesel.net:
 
   vars:        
     ansible_user: automation

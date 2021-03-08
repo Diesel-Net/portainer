@@ -4,14 +4,6 @@
   strategy: free
 
   tasks:
-
-    - name: "Ensuring existence of directory: {{ app_data }}/data"
-      command: mkdir -p {{ app_data }}/data
-      args:
-        warn: no
-      become: yes
-      become_user: "{{ user }}"
-
     - name: Render docker-compose.yaml & deploy stack
       import_role:
         name: docker-deploy

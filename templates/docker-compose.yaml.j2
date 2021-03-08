@@ -37,6 +37,8 @@ services:
         - traefik.enable=true
         - traefik.http.services.{{ proxy_router_main }}.loadbalancer.server.port=9000
         - traefik.http.routers.{{ proxy_router_main }}.rule=Host(`{{ proxy_domains | join('`,`') }}`) && PathPrefix(`{{ proxy_path }}`)
+
+        - traefik.http.routers.{{ proxy_router_main }}.tls.certresolver=step-ca
         
         # stripprefix middleware
         - traefik.http.middlewares.{{ proxy_router_main_strip }}.stripprefix.prefixes={{ proxy_path }}

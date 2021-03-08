@@ -11,6 +11,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
+    galaxy: roles/requirements.yaml
     inventory: inventories/development/hosts
     private_key:
       from_secret: ansible_private_key
@@ -36,6 +37,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
+    galaxy: roles/requirements.yaml
     inventory: inventories/stable/hosts
     private_key:
       from_secret: ansible_private_key
@@ -61,6 +63,7 @@ steps:
   image: plugins/ansible:3
   settings:
     playbook: deploy.yaml
+    galaxy: roles/requirements.yaml
     inventory: inventories/production/hosts
     private_key:
       from_secret: ansible_private_key

@@ -1,4 +1,2 @@
-roles/common
-roles/docker_stack
-
+roles/docker-deploy
 .DS_Store

@@ -11,5 +11,5 @@ ansible-galaxy install -r roles/requirements.yaml -p ./roles --force
 
 ## Deploy
 ```bash
-ansible-playbook deploy.yaml -i inventories/dev/hosts --vault-id ~/.tokens/vault.txt
+ansible-playbook deploy.yaml -i inventories/development/hosts --vault-id ~/.tokens/vault.txt
 ```

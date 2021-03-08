@@ -12,10 +12,8 @@
       become: yes
       become_user: "{{ user }}"
 
-    - name: Render docker-compose.yaml
-      template:
-        src: docker-compose.yaml.j2
-        dest: '{{ app_data }}/docker-compose.yaml'
-
-    - name: Run `docker stack deploy`
-      shell: docker stack deploy -c {{ app_data }}/docker-compose.yaml {{ env }}_portainer
+    - name: Render docker-compose.yaml & deploy stack
+      import_role:
+        name: docker-deploy
+      vars:
+        with_registry: no

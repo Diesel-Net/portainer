@@ -9,6 +9,8 @@ clone:
 steps:
 - name: deploy
   image: plugins/ansible:3
+  environment:
+    ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
     playbook: deploy.yaml
     galaxy: roles/requirements.yaml
@@ -35,6 +37,8 @@ clone:
 steps:
 - name: deploy
   image: plugins/ansible:3
+  environment:
+    ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
     playbook: deploy.yaml
     galaxy: roles/requirements.yaml
@@ -61,6 +65,8 @@ clone:
 steps:
 - name: deploy
   image: plugins/ansible:3
+  environment:
+    ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
     playbook: deploy.yaml
     galaxy: roles/requirements.yaml

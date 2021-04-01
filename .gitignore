@@ -1,2 +1,2 @@
-roles/docker-deploy
+.ansible/roles/docker-deploy
 .DS_Store

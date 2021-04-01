@@ -12,8 +12,8 @@ steps:
   environment:
     ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
-    playbook: deploy.yaml
-    galaxy: roles/requirements.yaml
+    playbook: .ansible/deploy.yaml
+    galaxy: .ansible/roles/requirements.yaml
     inventory: inventories/development/hosts
     private_key:
       from_secret: ansible_private_key
@@ -40,8 +40,8 @@ steps:
   environment:
     ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
-    playbook: deploy.yaml
-    galaxy: roles/requirements.yaml
+    playbook: .ansible/deploy.yaml
+    galaxy: .ansible/roles/requirements.yaml
     inventory: inventories/stable/hosts
     private_key:
       from_secret: ansible_private_key
@@ -68,8 +68,8 @@ steps:
   environment:
     ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
-    playbook: deploy.yaml
-    galaxy: roles/requirements.yaml
+    playbook: .ansible/deploy.yaml
+    galaxy: .ansible/roles/requirements.yaml
     inventory: inventories/production/hosts
     private_key:
       from_secret: ansible_private_key

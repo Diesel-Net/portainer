@@ -4,8 +4,5 @@
   strategy: free
 
   tasks:
-    - name: Render docker-compose.yaml & deploy stack
-      import_role:
-        name: docker-deploy
-      vars:
-        with_registry: no
+    - import_role:
+        name: docker_deploy

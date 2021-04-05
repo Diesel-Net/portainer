@@ -14,7 +14,7 @@ steps:
   settings:
     playbook: .ansible/deploy.yaml
     galaxy: .ansible/roles/requirements.yaml
-    inventory: inventories/development/hosts
+    inventory: .ansible/inventory/development/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:
@@ -42,7 +42,7 @@ steps:
   settings:
     playbook: .ansible/deploy.yaml
     galaxy: .ansible/roles/requirements.yaml
-    inventory: inventories/stable/hosts
+    inventory: .ansible/inventory/stable/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:
@@ -70,7 +70,7 @@ steps:
   settings:
     playbook: .ansible/deploy.yaml
     galaxy: .ansible/roles/requirements.yaml
-    inventory: inventories/production/hosts
+    inventory: .ansible/inventory/production/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:

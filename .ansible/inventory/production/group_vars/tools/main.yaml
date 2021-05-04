@@ -1,2 +1,3 @@
 proxy_domains: 
+  - diesel.net
   - tools.diesel.net

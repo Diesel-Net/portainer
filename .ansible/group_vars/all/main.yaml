@@ -1,5 +1,3 @@
-codename: portainer
-
 # directories
 directories_ansible: '{{ playbook_dir }}'
 directories_build: ~/drone_builds
@@ -11,7 +9,6 @@ directories_src: /drone/src/
 directories_ssl_certificates: '/etc/ssl/certs/'
 directories_ssl_certificates_file: '{{ directories_ssl_certificates }}ca-certificates.crt'
 directories_ssl_certificates_host: '{{ directories_ssl_certificates }}'
-
 
 proxy_path: /portainer
 

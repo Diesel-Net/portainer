@@ -3,7 +3,7 @@ all:
 
     leader:
       hosts:
-        diesel.net:
+        prod.diesel.net:
           
     tools:
       hosts:

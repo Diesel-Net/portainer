@@ -1,4 +1,3 @@
 proxy_domains: 
-  - diesel.net
-  - drone.diesel.net
   - prod.diesel.net
+  - drone.diesel.net

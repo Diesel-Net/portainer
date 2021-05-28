@@ -2,7 +2,14 @@
 
 - hosts: all
   strategy: free
+  roles:
+    - common
 
   tasks:
-    - import_role:
-        name: docker_deploy
+    - include_role:
+        name: common
+        tasks_from: make_data_dir
+
+    - include_role:
+        name: docker
+        tasks_from: stack_deploy

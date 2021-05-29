@@ -1,4 +1,4 @@
-[![Build Status](https://drone-ci.hopto.org/api/badges/Diesel-Net/portainer/status.svg)](https://drone-ci.hopto.org/Diesel-Net/portainer)
+[![Build Status](https://drone.kiwi-labs.net/api/badges/Diesel-Net/portainer/status.svg)](https://drone.kiwi-labs.net/Diesel-Net/portainer)
 
 # portainer
 [Portainer Community Edition 2.0](https://www.portainer.io/), a WebUI for Docker Swarm Engine.

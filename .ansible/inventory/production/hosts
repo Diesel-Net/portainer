@@ -1,9 +1,9 @@
 all:
   children:
 
-    leader:
+    manager:
       hosts:
-        prod.diesel.net:
+        prod.diesel.net
           
     tools:
       hosts:

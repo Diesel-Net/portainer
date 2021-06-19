@@ -37,20 +37,7 @@ services:
         - traefik.enable=true
         - traefik.http.services.{{ proxy_router_main }}.loadbalancer.server.port=9000
         - traefik.http.routers.{{ proxy_router_main }}.rule=Host(`{{ domain }}`)
-
         - traefik.http.routers.{{ proxy_router_main }}.tls.certresolver=step-ca
-        
-        # stripprefix middleware
-        #- traefik.http.middlewares.{{ proxy_router_main_strip }}.stripprefix.prefixes={{ proxy_path }}
-
-        # trailing slash middleware
-        #- traefik.http.middlewares.{{ proxy_router_main_redirect }}.redirectregex.regex=(^.*\{{ proxy_path }}$$)
-        #- traefik.http.middlewares.{{ proxy_router_main_redirect }}.redirectregex.replacement=$$1/
-        #- traefik.http.middlewares.{{ proxy_router_main_redirect }}.redirectregex.permanent=false
-
-        # assign middlewares
-        #- traefik.http.routers.{{ proxy_router_main }}.middlewares={{ proxy_router_main_redirect }}@docker, {{ proxy_router_main_strip }}@docker
-
 networks:
   {{ docker_network }}:
     external:

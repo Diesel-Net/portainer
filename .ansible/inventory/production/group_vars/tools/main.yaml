@@ -1,2 +1,1 @@
-proxy_domains: 
-  - tools.diesel.net
+domain: portainer.tools.diesel.net
